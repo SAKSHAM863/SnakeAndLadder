@@ -115,7 +115,7 @@ class SnakeAndLadderBoard {
                 for(Player player: board.players){
                     if(!board.hadPlayerWon(player)){
                         System.out.println(player.name + " Press Enter to roll the dice");
-                        cin.next();
+                        cin.nextLine();
 
                         int diceRoll = (int)(Math.random()*6)+1;
                         System.out.println(player.name + " Rolled a " + diceRoll);
